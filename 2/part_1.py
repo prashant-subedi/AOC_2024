@@ -13,9 +13,11 @@ def report_is_safe(report):
             return False
     return True
 
-safe_count = 0
-for report in parse_input():
-    if report_is_safe(report):
-        safe_count+=1
+if __name__ == "__main__":
 
-print(safe_count)
+    safe_count = 0
+    for report in parse_input():
+        if report_is_safe(report):
+            safe_count+=1
+
+    print(safe_count)
